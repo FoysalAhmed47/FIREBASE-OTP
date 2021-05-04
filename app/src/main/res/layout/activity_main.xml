@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="May I ask you phone number?"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary" />
+
+
+        <Spinner
+            android:id="@+id/spinnerCountries"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextPhone"
+            android:layout_marginTop="4dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter your number"
+            android:inputType="phone"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/textView"
+            />
+
+
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:text="Continue"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/editTextPhone"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
